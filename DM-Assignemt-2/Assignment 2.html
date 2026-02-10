@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .figure-container
+    h1 {text-align: center;}
+    p {text-align: center;}
+    div {text-align: center;background-color: powderblue; align-items: center;}
+    a href {color:firebrick;}
+</style>
+<body>
+    <div style="border: 10px solid goldenrod;width: 900px">
+        <h1>Hello Again!</h1>
+        <h2>Its our Second Assignment</h2>
+        <p>Added the background color but also added the alignment</p>
+        <p>Into the style section, can I just add it inline?</p>
+        <p style="text-align:right; color: green;">I guess you can. But its all in Style</p>
+
+        <a href="https://www.qcc.cuny.edu/" style="color: rgb(213, 17, 49);">This will take you to the QCC page</a>
+
+        <figure>
+            <img src="mario-logo.png" alt="Mario Logo" style="width: 100px; height: 100px;">
+            <img src="mario-logo.png" alt="Mario Logo" style="width: 100px; height: 100px;">
+            <img src="mario-logo.png" alt="Mario Logo" style="width: 100px; height: 100px;">
+            <figcaption>Regular Mario Logo</figcaption>
+        </figure>
+        <div>
+        <figure>
+            <img src="Luigi_emblem.png" alt="Luigi Logo" style="width: 75px; height: 75px;">
+            <img src="Peach_emblem.png" alt="Peach Logo" style="width: 75px; height: 75px;">
+            <img src="Wario_emblem.png" alt="Wario Logo" style="width: 75px; height: 75px;">            
+            <img src="Waluigi_emblem.png" alt="WaLuigi Logo" style="width: 75px; height: 75px;">
+            <figcaption>All Mario Characters collection</figcaption>
+        </figure>
+        </div>
+        <br>
+        <div style="display: flex; gap: 20px; align-items: center; align-self: center;">
+            <form onsubmit="showComment(); return false;">
+            <label for="comment">Personal Opinion?:</label><br>
+            <textarea 
+            id="comment"
+            rows="10"
+            cols="30"
+            placeholder="Please Enter your favorite thoughts about Mario games here..."></textarea>
+            <input type="submit" value="Submit">
+            </form>
+
+            <br>
+
+            <div style="border: 1px solid #CCF; padding: 10px; width: 300px; color:darkviolet; align-items: center; align-self: center;">
+                <strong>Your Comment:</strong>
+                <p id="output"></p>
+            </div>
+            <br>
+        </div>
+        <script>
+            function showComment() {
+            const text = document.getElementById("comment").value;
+            document.getElementById("output").textContent = text;
+  }
+        </script>
+    <div>
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/Dxcc6ycZ73M?si=LLslVAz5S6YawhFo" title="YouTube video player" 
+       frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+       referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+       <h4>Not sure how to fix the configuration error</h4>
+       <h5>Have a solution from Reddit but seems too advanced</h5>
+       <!--This involves creating a seprate webpage complete asset and referencing it, but maybe there is a better way to do it
+       https://www.reddit.com/r/obs/comments/1olfb8k/solution_to_youtube_error_153_fixing_browser/ please check here for more details-->
+    </div>    
+
+</div>
+    
+</body>
+</html>
