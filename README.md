@@ -1,2 +1,2 @@
-#frontend-amusementpark.github.io
+# frontend-amusementpark.github.io
 ET-710 Collection of Projects 
